@@ -9,7 +9,8 @@ contract MessageStore {
 		owner = msg.sender;
 	}
 
-	function setMessage(string newMessage) public isOwner {
+	function setMessage(string newMessage) public payable {
+		require(msg.value == 3 ether);
 		message = newMessage;
 	}
 
