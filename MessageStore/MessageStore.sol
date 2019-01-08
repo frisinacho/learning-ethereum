@@ -4,7 +4,7 @@ contract MessageStore {
 
 	address private owner;
 
-	constructor() {
+	constructor() public {
 		owner = msg.sender;
 	}
 
