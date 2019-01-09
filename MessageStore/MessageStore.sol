@@ -4,12 +4,7 @@ import "./Ownable.sol";
 
 contract MessageStore is Ownable {
 
-	address private owner;
 	string private message;
-
-	constructor() public {
-		owner = msg.sender;
-	}
 
 	function setMessage(string newMessage) public payable {
 		require(msg.value == 3 ether);
