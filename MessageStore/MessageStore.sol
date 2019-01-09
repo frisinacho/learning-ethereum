@@ -17,9 +17,4 @@ contract MessageStore {
 	function getMessage() public view returns (string) {
 		return message;
 	}
-
-	modifier isOwner() {
-		require(owner == msg.sender);
-		_;
-	}
 }
