@@ -1,6 +1,8 @@
 pragma solidity ^0.4.24;
 
-contract MessageStore {
+import "./Ownable.sol";
+
+contract MessageStore is Ownable {
 
 	address private owner;
 	string private message;
