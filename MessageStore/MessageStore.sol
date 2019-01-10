@@ -14,4 +14,8 @@ contract MessageStore is Ownable {
 	function getMessage() public view returns (string) {
 		return message;
 	}
+
+	function getBalance() public view returns (unit) {
+		return this.balance;
+	}
 }
